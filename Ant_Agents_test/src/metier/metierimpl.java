@@ -40,7 +40,8 @@ public class metierimpl implements imetier,Serializable {
 	@Override
 	public List<Arc> load_seccusseur(City src, Graph g, List<City> m) {
 		//List<Arc> sec = new ArrayList<Arc>();
-		lsarc.clear();
+		//lsarc.clear();
+		lsarc = new ArrayList<Arc>();
 		/*
 		for(Arc a:g.getArcs()){
 			System.out.println("actuel >> "+src.getName()+" ## "+checkcity(a.getDest(), m));
@@ -166,10 +167,14 @@ public class metierimpl implements imetier,Serializable {
 		
 		//List<Arc> sec = this.load_seccusseur(i, g, m);
 		lsarc.clear();
+		//lsarc = new ArrayList<Arc>();
 		lsarc = this.load_seccusseur(i, g, m);
 		
 		maps.clear();
 		vals.clear();
+		
+		//maps = new HashMap<Arc, Double>();
+		//vals = new ArrayList<Double>();
 		double invs,inv;
 		
 		//System.out.println("From "+i +" IS >> "+sec +" <<< "+sec.size());
@@ -313,8 +318,11 @@ public class metierimpl implements imetier,Serializable {
 	public Graph initGraph(double alpha, double beta,double ph0,double ru,List<PointsCoordinate> pc) {
 		// TODO Auto-generated method stub
 		Graph gr = new Graph();
+		
+		Graph gr2 = new Graph();
 		//List<City> ct = new ArrayList<City>();
 		lsct.clear();
+		//lsct = new ArrayList<City>();
 		
 		gr.setAlpha(alpha);
 		gr.setBeta(beta);
@@ -343,6 +351,27 @@ public class metierimpl implements imetier,Serializable {
 			gr.getArcs().add(ar);
 		}
 		
+		gr2 = gr;
+		List<City> tmp = new ArrayList<City>();
+		List<Arc> arctmp = new ArrayList<Arc>();
+		for (int i = 0; i < gr.getCities().size(); i++) {
+			City ct = gr.getCities().get(i);
+			arctmp = load_seccusseur_new(ct, null, ac);
+			ct.setSuccesseur(arctmp);
+			tmp.add(ct);
+		}
+		
+		gr.setCities(tmp);
+		
+		/*
+		for (int i = 0; i < tmp.size(); i++) {
+			System.out.println("*************** begin **"+tmp.get(i).getName());
+			System.out.println(tmp.get(i).getSuccesseur().toString());
+		}
+		*/
+		
+		
+		
 		return gr;
 	}
 	@Override
@@ -361,6 +390,7 @@ public class metierimpl implements imetier,Serializable {
 		// TODO Auto-generated method stub
 		//List<City> ct = new ArrayList<City>();
 		lsct.clear();
+		//lsct = new ArrayList<City>();
 		for(PointsCoordinate pc:po){
 			lsct.add(new City(pc.getPx()+"#"+pc.getPy(), pc));
 		}
@@ -401,6 +431,7 @@ public class metierimpl implements imetier,Serializable {
 		for(Integer i:in.keySet()){
 			
 			d.clear();
+			//d = new HashMap<Ant, List<Arc>>();
 			d = in.get(i);
 		//	HashMap<Ant, Double> tr = new HashMap<Ant, Double>();
 		//	b = new ArrayList<Double>();
@@ -447,6 +478,7 @@ public class metierimpl implements imetier,Serializable {
 	public Ant CalculBestIteration(List<Ant> a) {
 		// TODO Auto-generated method stub
 		res.clear();
+		//res = new HashMap<Double, Ant>();
 		for (int i = 0; i < a.size(); i++) {
 			if(a.get(i).getArcs().size() > 0){
 				res.put(CalclongthOfTour(a.get(i).getArcs()), a.get(i));
@@ -455,22 +487,25 @@ public class metierimpl implements imetier,Serializable {
 		}
 		SortedSet<Double> keys = new TreeSet<Double>(res.keySet());
 		
-		System.out.println(">>> best founded "+res.get(keys.first()).getName());
+		//System.out.println(">>> best founded "+res.get(keys.first()).getName());
 		return res.get(keys.first());
 		
 	}
 
 	@Override
-	public List<Arc> load_seccusseur_new(City src, Graph g) {
+	public List<Arc> load_seccusseur_new(City src, Graph g,List<Arc> arc) {
 		// TODO Auto-generated method stub
 		//List<Arc> sec = new ArrayList<Arc>();
-				lsarc.clear();
-				for(Arc a:g.getArcs()){
+		//System.out.println("*************** begin "+src.getName()+"************************");
+				//lsarc.clear();
+				lsarc = new ArrayList<Arc>();
+				for(Arc a:arc){
 					if(a.getSrc().getName().equals(src.getName())){
 						lsarc.add(a);
 					}
 				}
-				//System.out.println("Load sec "+src.getName()+" >> "+lsarc.size());
+		//System.out.println("Load sec "+src.getName()+" >> "+lsarc.toString());
+		//System.out.println("*****************************************************");
 				return lsarc;
 	}
 }

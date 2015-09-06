@@ -13,7 +13,7 @@ import entite.Graph;
 public interface imetier {
 
 	public List<Arc> load_seccusseur(City src,Graph g,List<City> m);
-	public List<Arc> load_seccusseur_new(City src,Graph g);
+	public List<Arc> load_seccusseur_new(City src,Graph g,List<Arc> m);
 	public Arc linkcity(City s,City d,Graph g);
 	public boolean checkcity(City f,List<City> m);
 	public double CalcAllPheromone(Graph g);

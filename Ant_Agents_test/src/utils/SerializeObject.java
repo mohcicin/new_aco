@@ -176,9 +176,9 @@ public class SerializeObject {
 		return x;
 	}
 	
-	public synchronized static List<Ant> DeserializableObjectBestAnt(String fl){
+	public synchronized static Ant DeserializableObjectBestAnt(String fl){
 		
-		List<Ant> res = new ArrayList<Ant>();
+		Ant ant = new Ant();
 		try {
 			
 			Gson gson = new Gson();
@@ -190,15 +190,13 @@ public class SerializeObject {
 			while ((line = r.readLine()) != null) {
 				
 				BestFound bs = gson.fromJson(line, BestFound.class);
-				System.out.println(bs.toString());
-				Ant ant = new Ant();
+				//System.out.println(bs.toString());
 				ant.setName(bs.getAnt());
 				ant.setArcs(bs.getRes());
-				res.add(ant);
 			}	
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
-		return res;
+		return ant;
 	}
 }

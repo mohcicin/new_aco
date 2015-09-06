@@ -7,6 +7,7 @@ import java.io.PrintWriter;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 
 import metier.imetier;
@@ -61,7 +62,7 @@ public class Ant implements Serializable{
 			//output.write("Start construction "+this.getName());
 			longeur = 0;
 			while(!endsearch()){
-				System.out.println("actuel "+this.actuel);
+				System.out.println("actuel "+this.actuel +" =start== "+new Date());
 				this.memories.add(this.actuel);
 				this.lstmpmemo.add(this.actuel.getName());
 				tmp = dao.calculbestmove(this.actuel, this.g, this.memories, this.g.getAlpha(), this.g.getBeta());
@@ -72,6 +73,7 @@ public class Ant implements Serializable{
 				}else{
 					break;
 				}
+				System.out.println("actuel "+this.actuel +" =end== "+new Date());
 			}
 				
 				//output  = new BufferedWriter(new FileWriter(file));

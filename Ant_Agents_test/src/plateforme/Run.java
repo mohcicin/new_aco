@@ -20,16 +20,21 @@ public class Run {
 			File root = new File(classpathRoot.getParent());
 			File[] listOfFiles = root.listFiles();
 
-			String[] ext = new String[]{"txt","ant"};
 			for (File file : listOfFiles) {
 			       if(FilenameUtils.getExtension(file.getName()).equals("txt") || 
-			    	  FilenameUtils.getExtension(file.getName()).equals("ant") || 
-			    	  file.getName().equals("bestants")){
+			    	  FilenameUtils.getExtension(file.getName()).equals("ant") ){
 			    	   if(file.isFile()){
 			    		   file.delete();
 			    	   }else{
 			    		  // FileUtils.deleteDirectory(file);
 			    	   }
+			       }
+			       
+			       if(file.getName().equals("bestants")){
+			    	  File[] tmp = file.listFiles();  
+			    	  for (int i = 0; i < tmp.length; i++) {
+						tmp[i].delete();
+					}
 			       }
 			}
 			

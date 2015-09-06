@@ -193,7 +193,7 @@ public class Calculator extends Agent{
 										//SerializeObject.serializableObjectBest(myant,"best.txt");
 										
 										if(myant != null){
-											SerializeObject.serializableObjectBestAnt(new BestFound(myant.getName(), 0, myant.getArcs()), "bestants/best_"+NUM+".txt");
+											SerializeObject.serializableObjectBestAnt(new BestFound(myant.getName()+"_"+myant.getStart().getName(), 0, myant.getArcs()), "bestants/best_"+NUM+".txt");
 										}
 										
 										//bestFound.put(NUM, dt);
@@ -226,10 +226,14 @@ public class Calculator extends Agent{
 							if(NUM > 5){
 								
 								try {
-									//List<Ant> bestAnt = SerializeObject.DeserializableObjectBestAnt("best.txt");//SerializeObject.DeserializableObjectBest("best.txt");
+									List<Ant> bestAnt = new ArrayList<Ant>();
+									//SerializeObject.DeserializableObjectBest("best.txt");
 									
+									for (int i = 0; i <= NUM; i++) {
+										bestAnt.add(SerializeObject.DeserializableObjectBestAnt("bestants/best_"+i+".txt"));
+									}
 									
-									//System.out.println(">>> best ant from file "+bestAnt.toString());
+									System.out.println(">>> best ant from file "+bestAnt.toString());
 									/*
 									 for (int i = 0; i < bestAnt.size(); i++) {
 										dt.put(bestAnt.get(i), bestAnt.get(i).getArcs());
@@ -237,18 +241,18 @@ public class Calculator extends Agent{
 									*/
 									
 									//bestFound.put(0, dao.CalculBestIteration(bestAnt).getArcs());
-									/*
+									
 									HashMap<Integer, List<Arc>> rs = new HashMap<Integer, List<Arc>>();
 									rs.put(0, dao.CalculBestIteration(bestAnt).getArcs());
 									mavue.getjPanel2().setData(rs);//dao.calculBestTour(bestFound)
 									mavue.getjPanel2().repaint();
 									
 									for (int i = 0; i < agents.size(); i++) {
-										agents.get(i).kill();
+										agents.get(i).suspend();
 									}
 									
 									doSuspend();
-									*/
+									
 									
 									//System.exit(0);
 									

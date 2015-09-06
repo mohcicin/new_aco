@@ -93,8 +93,7 @@ public class Viewer extends GuiAgent{
 				
 				
 				for (int i = 0; i < gr.getCities().size(); i++) {
-					gr.getCities().get(i).setSuccesseur(dao.load_seccusseur_new(gr.getCities().get(i), gr));
-					System.out.println(">>>>viewer "+gr.getCities().get(i).getSuccesseur().size());
+					//gr.getCities().get(i).setSuccesseur(dao.load_seccusseur_new(gr.getCities().get(i), gr));
 					ant[i] = new Ant("cicinant"+i, gr,gr.getCities().get(i),dao);
 					gr.getAnts().add(ant[i]);
 					
@@ -103,7 +102,11 @@ public class Viewer extends GuiAgent{
 				
 				AntContoneur.getMe().startNewConteneur("SuperAgent", "agents.Calculator", new Object[]{mavue,gr,lsag});
 				
-				
+				/*
+				for (int i = 0; i < gr.getCities().size(); i++) {
+					System.out.println("****************** GR City "+gr.getCities().get(i).getName()+" *** "+gr.getCities().get(i).getSuccesseur());
+				}
+				*/
 				
 			} catch (Exception e) {
 				// TODO: handle exception

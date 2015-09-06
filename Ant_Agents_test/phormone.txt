@@ -1,0 +1,600 @@
+old phromone for edge 169#103 \ 161#234 >> 0.1
+
+new phromone for edge 169#103 \ 161#234 >> 0.09105274169482228
+
+old phromone for edge 169#103 \ 447#84 >> 0.1
+
+new phromone for edge 169#103 \ 447#84 >> 0.09192357206644143
+
+old phromone for edge 169#103 \ 492#251 >> 0.1
+
+new phromone for edge 169#103 \ 492#251 >> 0.09000000000000001
+
+old phromone for edge 169#103 \ 323#402 >> 0.1
+
+new phromone for edge 169#103 \ 323#402 >> 0.0918291660678452
+
+old phromone for edge 169#103 \ 318#235 >> 0.1
+
+new phromone for edge 169#103 \ 318#235 >> 0.09100338063974218
+
+old phromone for edge 161#234 \ 169#103 >> 0.1
+
+new phromone for edge 161#234 \ 169#103 >> 0.0947561187740288
+
+old phromone for edge 161#234 \ 447#84 >> 0.1
+
+new phromone for edge 161#234 \ 447#84 >> 0.09000000000000001
+
+old phromone for edge 161#234 \ 492#251 >> 0.1
+
+new phromone for edge 161#234 \ 492#251 >> 0.09000000000000001
+
+old phromone for edge 161#234 \ 323#402 >> 0.1
+
+new phromone for edge 161#234 \ 323#402 >> 0.09000000000000001
+
+old phromone for edge 161#234 \ 318#235 >> 0.1
+
+new phromone for edge 161#234 \ 318#235 >> 0.09105274169482228
+
+old phromone for edge 447#84 \ 169#103 >> 0.1
+
+new phromone for edge 447#84 \ 169#103 >> 0.09000000000000001
+
+old phromone for edge 447#84 \ 161#234 >> 0.1
+
+new phromone for edge 447#84 \ 161#234 >> 0.09000000000000001
+
+old phromone for edge 447#84 \ 492#251 >> 0.1
+
+new phromone for edge 447#84 \ 492#251 >> 0.09284924403628864
+
+old phromone for edge 447#84 \ 323#402 >> 0.1
+
+new phromone for edge 447#84 \ 323#402 >> 0.09000000000000001
+
+old phromone for edge 447#84 \ 318#235 >> 0.1
+
+new phromone for edge 447#84 \ 318#235 >> 0.090903494097998
+
+old phromone for edge 492#251 \ 169#103 >> 0.1
+
+new phromone for edge 492#251 \ 169#103 >> 0.09000000000000001
+
+old phromone for edge 492#251 \ 161#234 >> 0.1
+
+new phromone for edge 492#251 \ 161#234 >> 0.09000000000000001
+
+old phromone for edge 492#251 \ 447#84 >> 0.1
+
+new phromone for edge 492#251 \ 447#84 >> 0.09295961643256245
+
+old phromone for edge 492#251 \ 323#402 >> 0.1
+
+new phromone for edge 492#251 \ 323#402 >> 0.0909312102005176
+
+old phromone for edge 492#251 \ 318#235 >> 0.1
+
+new phromone for edge 492#251 \ 318#235 >> 0.0909256719698472
+
+old phromone for edge 323#402 \ 169#103 >> 0.1
+
+new phromone for edge 323#402 \ 169#103 >> 0.09000000000000001
+
+old phromone for edge 323#402 \ 161#234 >> 0.1
+
+new phromone for edge 323#402 \ 161#234 >> 0.09000000000000001
+
+old phromone for edge 323#402 \ 447#84 >> 0.1
+
+new phromone for edge 323#402 \ 447#84 >> 0.09000000000000001
+
+old phromone for edge 323#402 \ 492#251 >> 0.1
+
+new phromone for edge 323#402 \ 492#251 >> 0.09205612233456445
+
+old phromone for edge 323#402 \ 318#235 >> 0.1
+
+new phromone for edge 323#402 \ 318#235 >> 0.09099236186592384
+
+old phromone for edge 318#235 \ 169#103 >> 0.1
+
+new phromone for edge 318#235 \ 169#103 >> 0.09000000000000001
+
+old phromone for edge 318#235 \ 161#234 >> 0.1
+
+new phromone for edge 318#235 \ 161#234 >> 0.09375273813428663
+
+old phromone for edge 318#235 \ 447#84 >> 0.1
+
+new phromone for edge 318#235 \ 447#84 >> 0.09000000000000001
+
+old phromone for edge 318#235 \ 492#251 >> 0.1
+
+new phromone for edge 318#235 \ 492#251 >> 0.09000000000000001
+
+old phromone for edge 318#235 \ 323#402 >> 0.1
+
+new phromone for edge 318#235 \ 323#402 >> 0.09205612233456445
+
+old phromone for edge 169#103 \ 161#234 >> 0.09105274169482228
+
+new phromone for edge 169#103 \ 161#234 >> 0.08300020922016231
+
+old phromone for edge 169#103 \ 447#84 >> 0.09192357206644143
+
+new phromone for edge 169#103 \ 447#84 >> 0.0846547869262387
+
+old phromone for edge 169#103 \ 492#251 >> 0.09000000000000001
+
+new phromone for edge 169#103 \ 492#251 >> 0.08100000000000002
+
+old phromone for edge 169#103 \ 323#402 >> 0.0918291660678452
+
+new phromone for edge 169#103 \ 323#402 >> 0.08447541552890588
+
+old phromone for edge 169#103 \ 318#235 >> 0.09100338063974218
+
+new phromone for edge 169#103 \ 318#235 >> 0.08290642321551014
+
+old phromone for edge 161#234 \ 169#103 >> 0.0947561187740288
+
+new phromone for edge 161#234 \ 169#103 >> 0.09003662567065471
+
+old phromone for edge 161#234 \ 447#84 >> 0.09000000000000001
+
+new phromone for edge 161#234 \ 447#84 >> 0.08100000000000002
+
+old phromone for edge 161#234 \ 492#251 >> 0.09000000000000001
+
+new phromone for edge 161#234 \ 492#251 >> 0.08100000000000002
+
+old phromone for edge 161#234 \ 323#402 >> 0.09000000000000001
+
+new phromone for edge 161#234 \ 323#402 >> 0.08100000000000002
+
+old phromone for edge 161#234 \ 318#235 >> 0.09105274169482228
+
+new phromone for edge 161#234 \ 318#235 >> 0.08300020922016231
+
+old phromone for edge 447#84 \ 169#103 >> 0.09000000000000001
+
+new phromone for edge 447#84 \ 169#103 >> 0.08100000000000002
+
+old phromone for edge 447#84 \ 161#234 >> 0.09000000000000001
+
+new phromone for edge 447#84 \ 161#234 >> 0.08100000000000002
+
+old phromone for edge 447#84 \ 492#251 >> 0.09284924403628864
+
+new phromone for edge 447#84 \ 492#251 >> 0.0864135636689484
+
+old phromone for edge 447#84 \ 323#402 >> 0.09000000000000001
+
+new phromone for edge 447#84 \ 323#402 >> 0.08100000000000002
+
+old phromone for edge 447#84 \ 318#235 >> 0.090903494097998
+
+new phromone for edge 447#84 \ 318#235 >> 0.08271663878619619
+
+old phromone for edge 492#251 \ 169#103 >> 0.09000000000000001
+
+new phromone for edge 492#251 \ 169#103 >> 0.08100000000000002
+
+old phromone for edge 492#251 \ 161#234 >> 0.09000000000000001
+
+new phromone for edge 492#251 \ 161#234 >> 0.08100000000000002
+
+old phromone for edge 492#251 \ 447#84 >> 0.09295961643256245
+
+new phromone for edge 492#251 \ 447#84 >> 0.08662327122186865
+
+old phromone for edge 492#251 \ 323#402 >> 0.0909312102005176
+
+new phromone for edge 492#251 \ 323#402 >> 0.08276929938098343
+
+old phromone for edge 492#251 \ 318#235 >> 0.0909256719698472
+
+new phromone for edge 492#251 \ 318#235 >> 0.08275877674270968
+
+old phromone for edge 323#402 \ 169#103 >> 0.09000000000000001
+
+new phromone for edge 323#402 \ 169#103 >> 0.08100000000000002
+
+old phromone for edge 323#402 \ 161#234 >> 0.09000000000000001
+
+new phromone for edge 323#402 \ 161#234 >> 0.08100000000000002
+
+old phromone for edge 323#402 \ 447#84 >> 0.09000000000000001
+
+new phromone for edge 323#402 \ 447#84 >> 0.08100000000000002
+
+old phromone for edge 323#402 \ 492#251 >> 0.09205612233456445
+
+new phromone for edge 323#402 \ 492#251 >> 0.08490663243567245
+
+old phromone for edge 323#402 \ 318#235 >> 0.09099236186592384
+
+new phromone for edge 323#402 \ 318#235 >> 0.08288548754525529
+
+old phromone for edge 318#235 \ 169#103 >> 0.09000000000000001
+
+new phromone for edge 318#235 \ 169#103 >> 0.08100000000000002
+
+old phromone for edge 318#235 \ 161#234 >> 0.09375273813428663
+
+new phromone for edge 318#235 \ 161#234 >> 0.08813020245514458
+
+old phromone for edge 318#235 \ 447#84 >> 0.09000000000000001
+
+new phromone for edge 318#235 \ 447#84 >> 0.08100000000000002
+
+old phromone for edge 318#235 \ 492#251 >> 0.09000000000000001
+
+new phromone for edge 318#235 \ 492#251 >> 0.08100000000000002
+
+old phromone for edge 318#235 \ 323#402 >> 0.09205612233456445
+
+new phromone for edge 318#235 \ 323#402 >> 0.08490663243567245
+
+old phromone for edge 169#103 \ 161#234 >> 0.08300020922016231
+
+new phromone for edge 169#103 \ 161#234 >> 0.07575292999296834
+
+old phromone for edge 169#103 \ 447#84 >> 0.0846547869262387
+
+new phromone for edge 169#103 \ 447#84 >> 0.07811288030005625
+
+old phromone for edge 169#103 \ 492#251 >> 0.08100000000000002
+
+new phromone for edge 169#103 \ 492#251 >> 0.07290000000000002
+
+old phromone for edge 169#103 \ 323#402 >> 0.08447541552890588
+
+new phromone for edge 169#103 \ 323#402 >> 0.07785704004386049
+
+old phromone for edge 169#103 \ 318#235 >> 0.08290642321551014
+
+new phromone for edge 169#103 \ 318#235 >> 0.07561916153370131
+
+old phromone for edge 161#234 \ 169#103 >> 0.09003662567065471
+
+new phromone for edge 161#234 \ 169#103 >> 0.08578908187761802
+
+old phromone for edge 161#234 \ 447#84 >> 0.08100000000000002
+
+new phromone for edge 161#234 \ 447#84 >> 0.07290000000000002
+
+old phromone for edge 161#234 \ 492#251 >> 0.08100000000000002
+
+new phromone for edge 161#234 \ 492#251 >> 0.07290000000000002
+
+old phromone for edge 161#234 \ 323#402 >> 0.08100000000000002
+
+new phromone for edge 161#234 \ 323#402 >> 0.07290000000000002
+
+old phromone for edge 161#234 \ 318#235 >> 0.08300020922016231
+
+new phromone for edge 161#234 \ 318#235 >> 0.07575292999296834
+
+old phromone for edge 447#84 \ 169#103 >> 0.08100000000000002
+
+new phromone for edge 447#84 \ 169#103 >> 0.07290000000000002
+
+old phromone for edge 447#84 \ 161#234 >> 0.08100000000000002
+
+new phromone for edge 447#84 \ 161#234 >> 0.07290000000000002
+
+old phromone for edge 447#84 \ 492#251 >> 0.0864135636689484
+
+new phromone for edge 447#84 \ 492#251 >> 0.08062145133834218
+
+old phromone for edge 447#84 \ 323#402 >> 0.08100000000000002
+
+new phromone for edge 447#84 \ 323#402 >> 0.07290000000000002
+
+old phromone for edge 447#84 \ 318#235 >> 0.08271663878619619
+
+new phromone for edge 447#84 \ 318#235 >> 0.07534846900557456
+
+old phromone for edge 492#251 \ 169#103 >> 0.08100000000000002
+
+new phromone for edge 492#251 \ 169#103 >> 0.07290000000000002
+
+old phromone for edge 492#251 \ 161#234 >> 0.08100000000000002
+
+new phromone for edge 492#251 \ 161#234 >> 0.07290000000000002
+
+old phromone for edge 492#251 \ 447#84 >> 0.08662327122186865
+
+new phromone for edge 492#251 \ 447#84 >> 0.08092056053224422
+
+old phromone for edge 492#251 \ 323#402 >> 0.08276929938098343
+
+new phromone for edge 492#251 \ 323#402 >> 0.07542357964340268
+
+old phromone for edge 492#251 \ 318#235 >> 0.08275877674270968
+
+new phromone for edge 492#251 \ 318#235 >> 0.07540857103828591
+
+old phromone for edge 323#402 \ 169#103 >> 0.08100000000000002
+
+new phromone for edge 323#402 \ 169#103 >> 0.07290000000000002
+
+old phromone for edge 323#402 \ 161#234 >> 0.08100000000000002
+
+new phromone for edge 323#402 \ 161#234 >> 0.07290000000000002
+
+old phromone for edge 323#402 \ 447#84 >> 0.08100000000000002
+
+new phromone for edge 323#402 \ 447#84 >> 0.07290000000000002
+
+old phromone for edge 323#402 \ 492#251 >> 0.08490663243567245
+
+new phromone for edge 323#402 \ 492#251 >> 0.07847209152666965
+
+old phromone for edge 323#402 \ 318#235 >> 0.08288548754525529
+
+new phromone for edge 323#402 \ 318#235 >> 0.07558930065665359
+
+old phromone for edge 318#235 \ 169#103 >> 0.08100000000000002
+
+new phromone for edge 318#235 \ 169#103 >> 0.07290000000000002
+
+old phromone for edge 318#235 \ 161#234 >> 0.08813020245514458
+
+new phromone for edge 318#235 \ 161#234 >> 0.08306992034391673
+
+old phromone for edge 318#235 \ 447#84 >> 0.08100000000000002
+
+new phromone for edge 318#235 \ 447#84 >> 0.07290000000000002
+
+old phromone for edge 318#235 \ 492#251 >> 0.08100000000000002
+
+new phromone for edge 318#235 \ 492#251 >> 0.07290000000000002
+
+old phromone for edge 318#235 \ 323#402 >> 0.08490663243567245
+
+new phromone for edge 318#235 \ 323#402 >> 0.07847209152666965
+
+old phromone for edge 169#103 \ 161#234 >> 0.07575292999296834
+
+new phromone for edge 169#103 \ 161#234 >> 0.06923037868849377
+
+old phromone for edge 169#103 \ 447#84 >> 0.07811288030005625
+
+new phromone for edge 169#103 \ 447#84 >> 0.07222516433649205
+
+old phromone for edge 169#103 \ 492#251 >> 0.07290000000000002
+
+new phromone for edge 169#103 \ 492#251 >> 0.06561000000000002
+
+old phromone for edge 169#103 \ 323#402 >> 0.07785704004386049
+
+new phromone for edge 169#103 \ 323#402 >> 0.07190050210731963
+
+old phromone for edge 169#103 \ 318#235 >> 0.07561916153370131
+
+new phromone for edge 169#103 \ 318#235 >> 0.06906062602007336
+
+old phromone for edge 161#234 \ 169#103 >> 0.08578908187761802
+
+new phromone for edge 161#234 \ 169#103 >> 0.08196629246388501
+
+old phromone for edge 161#234 \ 447#84 >> 0.07290000000000002
+
+new phromone for edge 161#234 \ 447#84 >> 0.06561000000000002
+
+old phromone for edge 161#234 \ 492#251 >> 0.07290000000000002
+
+new phromone for edge 161#234 \ 492#251 >> 0.06561000000000002
+
+old phromone for edge 161#234 \ 323#402 >> 0.07290000000000002
+
+new phromone for edge 161#234 \ 323#402 >> 0.06561000000000002
+
+old phromone for edge 161#234 \ 318#235 >> 0.07575292999296834
+
+new phromone for edge 161#234 \ 318#235 >> 0.06923037868849377
+
+old phromone for edge 447#84 \ 169#103 >> 0.07290000000000002
+
+new phromone for edge 447#84 \ 169#103 >> 0.06561000000000002
+
+old phromone for edge 447#84 \ 161#234 >> 0.07290000000000002
+
+new phromone for edge 447#84 \ 161#234 >> 0.06561000000000002
+
+old phromone for edge 447#84 \ 492#251 >> 0.08062145133834218
+
+new phromone for edge 447#84 \ 492#251 >> 0.0754085502407966
+
+old phromone for edge 447#84 \ 323#402 >> 0.07290000000000002
+
+new phromone for edge 447#84 \ 323#402 >> 0.06561000000000002
+
+old phromone for edge 447#84 \ 318#235 >> 0.07534846900557456
+
+new phromone for edge 447#84 \ 318#235 >> 0.06871711620301509
+
+old phromone for edge 492#251 \ 169#103 >> 0.07290000000000002
+
+new phromone for edge 492#251 \ 169#103 >> 0.06561000000000002
+
+old phromone for edge 492#251 \ 161#234 >> 0.07290000000000002
+
+new phromone for edge 492#251 \ 161#234 >> 0.06561000000000002
+
+old phromone for edge 492#251 \ 447#84 >> 0.08092056053224422
+
+new phromone for edge 492#251 \ 447#84 >> 0.07578812091158224
+
+old phromone for edge 492#251 \ 323#402 >> 0.07542357964340268
+
+new phromone for edge 492#251 \ 323#402 >> 0.06881243187958001
+
+old phromone for edge 492#251 \ 318#235 >> 0.07540857103828591
+
+new phromone for edge 492#251 \ 318#235 >> 0.06879338590430452
+
+old phromone for edge 323#402 \ 169#103 >> 0.07290000000000002
+
+new phromone for edge 323#402 \ 169#103 >> 0.06561000000000002
+
+old phromone for edge 323#402 \ 161#234 >> 0.07290000000000002
+
+new phromone for edge 323#402 \ 161#234 >> 0.06561000000000002
+
+old phromone for edge 323#402 \ 447#84 >> 0.07290000000000002
+
+new phromone for edge 323#402 \ 447#84 >> 0.06561000000000002
+
+old phromone for edge 323#402 \ 492#251 >> 0.07847209152666965
+
+new phromone for edge 323#402 \ 492#251 >> 0.07268100470856713
+
+old phromone for edge 323#402 \ 318#235 >> 0.07558930065665359
+
+new phromone for edge 323#402 \ 318#235 >> 0.06902273245691207
+
+old phromone for edge 318#235 \ 169#103 >> 0.07290000000000002
+
+new phromone for edge 318#235 \ 169#103 >> 0.06561000000000002
+
+old phromone for edge 318#235 \ 161#234 >> 0.08306992034391673
+
+new phromone for edge 318#235 \ 161#234 >> 0.07851566644381168
+
+old phromone for edge 318#235 \ 447#84 >> 0.07290000000000002
+
+new phromone for edge 318#235 \ 447#84 >> 0.06561000000000002
+
+old phromone for edge 318#235 \ 492#251 >> 0.07290000000000002
+
+new phromone for edge 318#235 \ 492#251 >> 0.06561000000000002
+
+old phromone for edge 318#235 \ 323#402 >> 0.07847209152666965
+
+new phromone for edge 318#235 \ 323#402 >> 0.07268100470856713
+
+old phromone for edge 169#103 \ 161#234 >> 0.06923037868849377
+
+new phromone for edge 169#103 \ 161#234 >> 0.06336008251446666
+
+old phromone for edge 169#103 \ 447#84 >> 0.07222516433649205
+
+new phromone for edge 169#103 \ 447#84 >> 0.06692621996928427
+
+old phromone for edge 169#103 \ 492#251 >> 0.06561000000000002
+
+new phromone for edge 169#103 \ 492#251 >> 0.05904900000000002
+
+old phromone for edge 169#103 \ 323#402 >> 0.07190050210731963
+
+new phromone for edge 169#103 \ 323#402 >> 0.06653961796443286
+
+old phromone for edge 169#103 \ 318#235 >> 0.06906062602007336
+
+new phromone for edge 169#103 \ 318#235 >> 0.0631579440578082
+
+old phromone for edge 161#234 \ 169#103 >> 0.08196629246388501
+
+new phromone for edge 161#234 \ 169#103 >> 0.0785257819915253
+
+old phromone for edge 161#234 \ 447#84 >> 0.06561000000000002
+
+new phromone for edge 161#234 \ 447#84 >> 0.05904900000000002
+
+old phromone for edge 161#234 \ 492#251 >> 0.06561000000000002
+
+new phromone for edge 161#234 \ 492#251 >> 0.05904900000000002
+
+old phromone for edge 161#234 \ 323#402 >> 0.06561000000000002
+
+new phromone for edge 161#234 \ 323#402 >> 0.05904900000000002
+
+old phromone for edge 161#234 \ 318#235 >> 0.06923037868849377
+
+new phromone for edge 161#234 \ 318#235 >> 0.06336008251446666
+
+old phromone for edge 447#84 \ 169#103 >> 0.06561000000000002
+
+new phromone for edge 447#84 \ 169#103 >> 0.05904900000000002
+
+old phromone for edge 447#84 \ 161#234 >> 0.06561000000000002
+
+new phromone for edge 447#84 \ 161#234 >> 0.05904900000000002
+
+old phromone for edge 447#84 \ 492#251 >> 0.0754085502407966
+
+new phromone for edge 447#84 \ 492#251 >> 0.07071693925300557
+
+old phromone for edge 447#84 \ 323#402 >> 0.06561000000000002
+
+new phromone for edge 447#84 \ 323#402 >> 0.05904900000000002
+
+old phromone for edge 447#84 \ 318#235 >> 0.06871711620301509
+
+new phromone for edge 447#84 \ 318#235 >> 0.06274889868071157
+
+old phromone for edge 492#251 \ 169#103 >> 0.06561000000000002
+
+new phromone for edge 492#251 \ 169#103 >> 0.05904900000000002
+
+old phromone for edge 492#251 \ 161#234 >> 0.06561000000000002
+
+new phromone for edge 492#251 \ 161#234 >> 0.05904900000000002
+
+old phromone for edge 492#251 \ 447#84 >> 0.07578812091158224
+
+new phromone for edge 492#251 \ 447#84 >> 0.07116892525298646
+
+old phromone for edge 492#251 \ 323#402 >> 0.06881243187958001
+
+new phromone for edge 492#251 \ 323#402 >> 0.06286239889213961
+
+old phromone for edge 492#251 \ 318#235 >> 0.06879338590430452
+
+new phromone for edge 492#251 \ 318#235 >> 0.06283971928372126
+
+old phromone for edge 323#402 \ 169#103 >> 0.06561000000000002
+
+new phromone for edge 323#402 \ 169#103 >> 0.05904900000000002
+
+old phromone for edge 323#402 \ 161#234 >> 0.06561000000000002
+
+new phromone for edge 323#402 \ 161#234 >> 0.05904900000000002
+
+old phromone for edge 323#402 \ 447#84 >> 0.06561000000000002
+
+new phromone for edge 323#402 \ 447#84 >> 0.05904900000000002
+
+old phromone for edge 323#402 \ 492#251 >> 0.07268100470856713
+
+new phromone for edge 323#402 \ 492#251 >> 0.06746902657227485
+
+old phromone for edge 323#402 \ 318#235 >> 0.06902273245691207
+
+new phromone for edge 323#402 \ 318#235 >> 0.06311282107714469
+
+old phromone for edge 318#235 \ 169#103 >> 0.06561000000000002
+
+new phromone for edge 318#235 \ 169#103 >> 0.05904900000000002
+
+old phromone for edge 318#235 \ 161#234 >> 0.07851566644381168
+
+new phromone for edge 318#235 \ 161#234 >> 0.07441683793371713
+
+old phromone for edge 318#235 \ 447#84 >> 0.06561000000000002
+
+new phromone for edge 318#235 \ 447#84 >> 0.05904900000000002
+
+old phromone for edge 318#235 \ 492#251 >> 0.06561000000000002
+
+new phromone for edge 318#235 \ 492#251 >> 0.05904900000000002
+
+old phromone for edge 318#235 \ 323#402 >> 0.07268100470856713
+
+new phromone for edge 318#235 \ 323#402 >> 0.06746902657227485
+

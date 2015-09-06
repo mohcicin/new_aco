@@ -7,6 +7,7 @@ import java.util.List;
 
 import entite.Ant;
 import entite.Arc;
+import entite.City;
 
 public class BestFound implements Serializable{
 
@@ -43,6 +44,22 @@ public class BestFound implements Serializable{
 		super();
 		this.ant = ant;
 		this.num = num;
-		this.res = res;
+		this.res = prepa_arcs(res);
+	}
+	
+	private List<Arc> prepa_arcs(List<Arc> in){
+		
+		for (int i = 0; i < in.size(); i++) {
+			City src = in.get(i).getSrc();
+			src.setSuccesseur(new ArrayList<Arc>());
+			
+			City dest = in.get(i).getDest();
+			dest.setSuccesseur(new ArrayList<Arc>());
+			
+			in.get(i).setSrc(src);
+			in.get(i).setDest(dest);
+			
+		}
+		return in;
 	}
 }
