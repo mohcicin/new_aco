@@ -32,6 +32,7 @@ public class AntContoneur implements Serializable{
 			ProfileImpl pi = new ProfileImpl(false );
 			pi.setParameter(ProfileImpl.MAIN_HOST, "localhost");
 			
+			
 			AgentContainer c = runtime.createAgentContainer(pi);
 			SuperAg = c.createNewAgent(nm, paquege, ob);//new Object[]{c}
 			SuperAg.start();

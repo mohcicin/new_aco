@@ -158,6 +158,8 @@ public class Calculator extends Agent{
 							}	
 						}
 					
+						cleangarbage();
+						
 						MessageTemplate tm= MessageTemplate.MatchPerformative(ACLMessage.PROPOSE);
 
 						ACLMessage msgin=receive(tm);
@@ -173,63 +175,69 @@ public class Calculator extends Agent{
 								
 								System.out.println(NUM2+" Recieve PERPOSE FROM ants  "+recievs_ants.size()+" # "+gr.getCities().size()+" << "+new Date());
 								//if(recievs_ants.size() == gr.getCities().size()){
-									if(nbr == agents.size()){
-										
-										for (int i = 0; i < agents.size(); i++) {
-											recievs_ants.add(SerializeObject.DeserializableObjectAnt(agents.get(i).getName().split("@")[0]+".ant"));
-										}
-										
-										
-										//gr.setAnts(new ArrayList<Ant>());
-										gr.getAnts().clear(); 
-										
-										for (int i = 0; i < recievs_ants.size(); i++) {
+									try {
+										if(nbr == agents.size()){
 											
-											gr.getAnts().add(recievs_ants.get(i));
+											for (int i = 0; i < agents.size(); i++) {
+												recievs_ants.add(SerializeObject.DeserializableObjectAnt(agents.get(i).getName().split("@")[0]+".ant"));
+											}
+											
+											
+											gr.setAnts(new ArrayList<Ant>());
+											//gr.getAnts().clear(); 
+											
+											for (int i = 0; i < recievs_ants.size(); i++) {
+												gr.getAnts().add(recievs_ants.get(i));
+											}
+											
+											myant = dao.CalculBestIteration(recievs_ants);
+											//System.out.println(">> best itant "+myant.getArcs().toString());
+											//SerializeObject.serializableObjectBest(myant,"best.txt");
+											
+											if(myant != null){
+												SerializeObject.serializableObjectBestAnt(new BestFound(myant.getName()+"_"+myant.getStart().getName(), 0, myant.getArcs()), "bestants/best_"+NUM+".txt");
+											}
+											
+											//bestFound.put(NUM, dt);
+											
+											gr = dao.updateGlobalPheromone(gr);
+											
+											ACLMessage  msg1=new ACLMessage(ACLMessage.REQUEST);
+											
+											for (int j = 0; j < agents.size(); j++) {
+												msg1.addReceiver(new AID(agents.get(j).getName().split("@")[0], AID.ISLOCALNAME));
+											}
+											
+											//msg1.setContentObject((Serializable) gr);
+											msg1.setContent("ok");
+											SerializeObject.serializableObjectGraph(gr, "calculator.ant");
+											send(msg1);
+											
+											/** init ants ***/
+											
+											System.out.println("SEND request with End iteration "+NUM);
+											NUM++;
+											
+											recievs_ants = new ArrayList<Ant>();//.clear();
+											//dt.clear(); // = new HashMap<Ant, List<Arc>>();
+											
+											nbr=0;
 										}
-										
-										myant = dao.CalculBestIteration(recievs_ants);
-										//System.out.println(">> best itant "+myant.getArcs().toString());
-										//SerializeObject.serializableObjectBest(myant,"best.txt");
-										
-										if(myant != null){
-											SerializeObject.serializableObjectBestAnt(new BestFound(myant.getName()+"_"+myant.getStart().getName(), 0, myant.getArcs()), "bestants/best_"+NUM+".txt");
-										}
-										
-										//bestFound.put(NUM, dt);
-										
-										dao.updateGlobalPheromone(gr);
-										
-										ACLMessage  msg1=new ACLMessage(ACLMessage.REQUEST);
-										
-										for (int j = 0; j < agents.size(); j++) {
-											msg1.addReceiver(new AID(agents.get(j).getName().split("@")[0], AID.ISLOCALNAME));
-										}
-										
-										//msg1.setContentObject((Serializable) gr);
-										msg1.setContent("ok");
-										SerializeObject.serializableObjectGraph(gr, "calculator.ant");
-										send(msg1);
-										
-										System.out.println("SEND request with End iteration "+NUM);
-										NUM++;
-										
-										recievs_ants.clear();// = new ArrayList<Ant>();
-										//dt.clear(); // = new HashMap<Ant, List<Arc>>();
-										
-										nbr=0;
+									} catch (Exception e) {
+										// TODO: handle exception
+										System.out.println("Exception Calculator PERPOSE "+e.getMessage());
 									}
 								//}
 							}
 							
 							
-							if(NUM > 5){
+							if(NUM == 5){
 								
 								try {
 									List<Ant> bestAnt = new ArrayList<Ant>();
 									//SerializeObject.DeserializableObjectBest("best.txt");
 									
-									for (int i = 0; i <= NUM; i++) {
+									for (int i = 0; i < NUM; i++) {
 										bestAnt.add(SerializeObject.DeserializableObjectBestAnt("bestants/best_"+i+".txt"));
 									}
 									
@@ -262,7 +270,7 @@ public class Calculator extends Agent{
 								}
 							}
 						}else{
-							System.out.println("msg block perpose calc out");
+							System.out.println("Calculator in waiting msg block perpose calc out");
 							block();
 						}
 						
@@ -377,4 +385,13 @@ public class Calculator extends Agent{
 		super.doDelete();
 	}
 
+	private void cleangarbage(){
+		long minRunningMemory = (1024*1024);
+
+		Runtime runtime = Runtime.getRuntime();
+
+		System.out.println("******** memory "+runtime.totalMemory() +"/" + runtime.freeMemory());
+	    runtime.gc();
+		 System.gc();
+	}
 }

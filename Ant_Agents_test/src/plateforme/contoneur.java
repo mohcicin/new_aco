@@ -25,6 +25,7 @@ public class contoneur {
 			ProfileImpl pi = new ProfileImpl(false );
 			pi.setParameter(ProfileImpl.MAIN_HOST, "localhost");
 			AgentContainer c = runtime.createAgentContainer(pi);
+			
 			AgentController SuperAg = c.createNewAgent("Myconteneur", "agents.Viewer", new Object[]{c});
 			SuperAg.start();
 

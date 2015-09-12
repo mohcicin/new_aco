@@ -62,7 +62,7 @@ public class Ant implements Serializable{
 			//output.write("Start construction "+this.getName());
 			longeur = 0;
 			while(!endsearch()){
-				System.out.println("actuel "+this.actuel +" =start== "+new Date());
+				System.out.println("actuel "+this.actuel.getName() +" =start== "+new Date());
 				this.memories.add(this.actuel);
 				this.lstmpmemo.add(this.actuel.getName());
 				tmp = dao.calculbestmove(this.actuel, this.g, this.memories, this.g.getAlpha(), this.g.getBeta());
@@ -73,24 +73,14 @@ public class Ant implements Serializable{
 				}else{
 					break;
 				}
-				System.out.println("actuel "+this.actuel +" =end== "+new Date());
+				System.out.println("actuel "+this.actuel.getName() +" =end== "+new Date());
 			}
-				
-				//output  = new BufferedWriter(new FileWriter(file));
+				/*
 			File file = new File(this.getName()+".txt");
 			FileWriter fw = new FileWriter(file, true);
 			
 	        PrintWriter pw = new PrintWriter(fw);
 			pw.println("vegin construction ********************************************* \n");
-				//System.out.println("vegin construction ********************************************* \n");
-				
-				/*
-				for(Arc c:this.arcs){
-					//System.out.println("Arc begin Construction "+c.getSrc().getName() +" <===> "+c.getDest().getName()+" : "+c.getPheromone()+"\n");
-					c.setPheromone(c.getPheromone() + dao.longthOfTour(arcs));
-					pw.println("Arc end Construction "+c.getSrc().getName() +" <===> "+c.getDest().getName()+" : "+c.getPheromone()+"\n");
-				}
-				*/
 				for (int i = 0; i < this.arcs.size(); i++) {
 					this.arcs.get(i).setPheromone(dao.longthOfTour(arcs));
 					longeur += this.arcs.get(i).getDistance();
@@ -98,7 +88,7 @@ public class Ant implements Serializable{
 				}
 				pw.println("fin construction *********************************************  with length = "+longeur+"\n");
 				pw.close();
-				//output.close();
+				*/
 		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println("Exception in find best tour "+this.name+" ## "+e.getMessage());
@@ -127,6 +117,7 @@ public class Ant implements Serializable{
 	public void initAnt(){
 		this.memories = new ArrayList<City>();
 		this.arcs = new ArrayList<Arc>();
+		this.lstmpmemo = new ArrayList<String>();
 	}
 	public probability calcproba(){
 		probability p =new probability();

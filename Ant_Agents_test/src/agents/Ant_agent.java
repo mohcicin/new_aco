@@ -41,6 +41,8 @@ public class Ant_agent extends Agent{
 				try {
 					//*myant.findTour();
 					
+					cleangarbage();
+					
 					MessageTemplate tm1=MessageTemplate.and(MessageTemplate.MatchPerformative(ACLMessage.INFORM), MessageTemplate.MatchSender(new AID("SuperAgent", AID.ISLOCALNAME)));
 					MessageTemplate tm2=MessageTemplate.and(MessageTemplate.MatchPerformative(ACLMessage.REQUEST), MessageTemplate.MatchSender(new AID("SuperAgent", AID.ISLOCALNAME)));
 					
@@ -53,40 +55,52 @@ public class Ant_agent extends Agent{
 					if(msg != null){
 						if(msg.getPerformative() == ACLMessage.INFORM){
 							if(msg.getContent().equals("OK")){
-								System.out.println("ANT in INFORM REcieve INFORM  "+getName());
-								myant = SerializeObject.DeserializableObjectAnt("ant_agent"+getAID().getLocalName()+".ant");
-								myant.findTour();
-								
-								SerializeObject.serializableObjectAnt(myant, getAID().getLocalName()+".ant");
+								System.out.println("ANT in INFORM REcieve INFORM From "+getName());
+								try {
+									myant = SerializeObject.DeserializableObjectAnt("ant_agent"+getAID().getLocalName()+".ant");
+									myant.initAnt();
+									myant.findTour();
+									
+									SerializeObject.serializableObjectAnt(myant, getAID().getLocalName()+".ant");
 
-								ACLMessage msg1=new ACLMessage(ACLMessage.PROPOSE);
-								msg1.addReceiver(new AID("SuperAgent", AID.ISLOCALNAME));
+									ACLMessage msg1=new ACLMessage(ACLMessage.PROPOSE);
+									msg1.addReceiver(new AID("SuperAgent", AID.ISLOCALNAME));
+									
+									//msg1.setContentObject((Serializable) myant);
+									msg1.setContent("ok");
+									send(msg1);
+								} catch (Exception e) {
+									// TODO: handle exception
+									System.out.println("Exception Ant Inform "+e.getMessage());
+								}
 								
-								//msg1.setContentObject((Serializable) myant);
-								msg1.setContent("ok");
-								send(msg1);
-								
-								System.out.println("ANT in INFORM send PERPOSE "+getName());
+								System.out.println("ANT in INFORM send PERPOSE To  "+getName());
 							}
 						}else if(msg.getPerformative() == ACLMessage.REQUEST){
-							System.out.println("Ant REQUEST Receive REQUEST "+getName());
+							System.out.println("Ant REQUEST Receive REQUEST FROM "+getName());
 							
 							//myant.setG((Graph) msg.getContentObject()); -- desrialize object
 							//if(msg.getContent().toString().equals("ok")){
-								myant = SerializeObject.DeserializableObjectAnt("ant_agent"+getAID().getLocalName()+".ant");
-								myant.setG(SerializeObject.DeserializableObjectGraph("calculator.ant"));
-								myant.findTour();
+								try {
+									myant = SerializeObject.DeserializableObjectAnt("ant_agent"+getAID().getLocalName()+".ant");
+									myant.setG(SerializeObject.DeserializableObjectGraph("calculator.ant"));
+									myant.initAnt();
+									myant.findTour();
 
-								SerializeObject.serializableObjectAnt(myant, getAID().getLocalName()+".ant");
-								
-								ACLMessage msg1=new ACLMessage(ACLMessage.PROPOSE);
-								msg1.addReceiver(new AID("SuperAgent", AID.ISLOCALNAME));
+									SerializeObject.serializableObjectAnt(myant, getAID().getLocalName()+".ant");
+									
+									ACLMessage msg1=new ACLMessage(ACLMessage.PROPOSE);
+									msg1.addReceiver(new AID("SuperAgent", AID.ISLOCALNAME));
 
-								//msg1.setContentObject((Serializable) myant);
-								msg1.setContent("ok");
-								send(msg1);
+									//msg1.setContentObject((Serializable) myant);
+									msg1.setContent("ok");
+									send(msg1);
+								} catch (Exception e) {
+									// TODO: handle exception
+									System.out.println("Exception ant REQUEST "+e.getMessage());
+								}
 								
-								System.out.println("ANT in Request send PERPOSE "+getName());
+								System.out.println("ANT in Request send PERPOSE TO "+getName());
 							//}
 							
 						}
@@ -150,5 +164,14 @@ public class Ant_agent extends Agent{
 		// TODO Auto-generated method stub
 		System.out.println(getAID().getName()+" is kill");
 		super.doDelete();
+	}
+	
+	private void cleangarbage(){
+		long minRunningMemory = (1024*1024);
+
+		Runtime runtime = Runtime.getRuntime();
+
+		if(runtime.freeMemory()<minRunningMemory)
+		 System.gc();
 	}
 }

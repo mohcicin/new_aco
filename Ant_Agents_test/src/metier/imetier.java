@@ -21,7 +21,7 @@ public interface imetier {
 	public Arc calculbestmove(City i,Graph g,List<City> m,double alpha,double beta);
 		public double calcprobamove(Arc i,double alpha,double beta);
 		public double calcprobainvsmove(City i,List<Arc> ar,double alpha,double beta);
-		public void updateGlobalPheromone(Graph g)throws Exception;
+		public Graph updateGlobalPheromone(Graph g)throws Exception;
 	public double longthOfTour(List<Arc> ac);
 	
 	public Graph initGraph(double alpha,double beta,double ph0,double ru,List<PointsCoordinate> pc);

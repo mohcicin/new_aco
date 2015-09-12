@@ -95,9 +95,9 @@ public class metierimpl implements imetier,Serializable {
 	}
 
 	@Override
-	public void updateGlobalPheromone(Graph g)throws Exception {
+	public Graph updateGlobalPheromone(Graph g)throws Exception {
 		// TODO Auto-generated method stub
-		
+		Graph tmp = g;
 		double old;
 		double newph=0;
 		File file = new File("phormone.txt");
@@ -134,12 +134,15 @@ public class metierimpl implements imetier,Serializable {
 					}
 				}
 			}
-			g.getArcs().get(i).setPheromone((1-g.getRu())*old + newph);
+			//g.getArcs().get(i).setPheromone((1-g.getRu())*old + newph);
+			tmp.getArcs().get(i).setPheromone((1-g.getRu())*old + newph);
 			pw.println("new phromone for edge "+g.getArcs().get(i).getSrc().getName() +" \\ "+g.getArcs().get(i).getDest().getName()+" >> "+g.getArcs().get(i).getPheromone()+"\n");
 			//output.write("****************************************************************** \n");
 			pw.close();
 		}
 		//output.close();
+		
+		return tmp;
 	}
 
 	@Override
