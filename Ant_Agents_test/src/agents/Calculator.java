@@ -19,6 +19,7 @@ import metier.imetier;
 import metier.metierimpl;
 import models.BestFound;
 
+import utils.Loggers;
 import utils.SerializeObject;
 import view.MyViewer;
 
@@ -143,7 +144,7 @@ public class Calculator extends Agent{
 				try {
 						if(go){
 							try {
-								System.out.println("Send data2 to agents");
+							 //	System.out.println("Send data2 to agents");
 								for (int i = 0; i < agents.size(); i++) {
 									ACLMessage msgout = new ACLMessage(ACLMessage.INFORM);
 									msgout.addReceiver(new AID(agents.get(i).getName().split("@")[0], AID.ISLOCALNAME));
@@ -173,16 +174,20 @@ public class Calculator extends Agent{
 								++nbr;
 								//recievs_ants.add(SerializeObject.DeserializableObjectAnt(msgin.getSender().getName().split("@")[0]+".ant"));
 								
-								System.out.println(NUM2+" Recieve PERPOSE FROM ants  "+recievs_ants.size()+" # "+gr.getCities().size()+" << "+new Date());
+								//System.out.println(NUM2+" Recieve PERPOSE FROM ants  "+recievs_ants.size()+" # "+gr.getCities().size()+" << "+new Date());
+								Loggers.WriteLog("Calculator >>  "+NUM2+" Recieve PERPOSE FROM ants  "+recievs_ants.size()+" # "+gr.getCities().size()+" << "+new Date());
 								//if(recievs_ants.size() == gr.getCities().size()){
 									try {
 										if(nbr == agents.size()){
 											
+											/************* PUT all ant received *****************/
 											for (int i = 0; i < agents.size(); i++) {
 												recievs_ants.add(SerializeObject.DeserializableObjectAnt(agents.get(i).getName().split("@")[0]+".ant"));
 											}
 											
 											
+											/*******************  Update the graph nat Values *********************/
+											Loggers.WriteLog("Calculator >>  Update Graph "+new Date());
 											gr.setAnts(new ArrayList<Ant>());
 											//gr.getAnts().clear(); 
 											
@@ -190,18 +195,24 @@ public class Calculator extends Agent{
 												gr.getAnts().add(recievs_ants.get(i));
 											}
 											
+											/*************** Get Ant with the shortest path length ****************/
 											myant = dao.CalculBestIteration(recievs_ants);
 											//System.out.println(">> best itant "+myant.getArcs().toString());
 											//SerializeObject.serializableObjectBest(myant,"best.txt");
-											
+											Loggers.WriteLog("Calculator >>  Best Ant Iteration "+NUM +" at "+new Date());
+											/************** Save the best ant for this iteration ************************/
 											if(myant != null){
 												SerializeObject.serializableObjectBestAnt(new BestFound(myant.getName()+"_"+myant.getStart().getName(), 0, myant.getArcs()), "bestants/best_"+NUM+".txt");
 											}
 											
 											//bestFound.put(NUM, dt);
 											
+											/******************* Update global pheromone *****************/
+											Loggers.WriteLog("Calculator >>  Update Global pheromone "+new Date());
 											gr = dao.updateGlobalPheromone(gr);
 											
+											
+											/************* Send msg to inform OOthers ant with the start of a new iteration ********************/
 											ACLMessage  msg1=new ACLMessage(ACLMessage.REQUEST);
 											
 											for (int j = 0; j < agents.size(); j++) {
@@ -209,13 +220,15 @@ public class Calculator extends Agent{
 											}
 											
 											//msg1.setContentObject((Serializable) gr);
+											/**************** Serialize the Graph to be used by the other agents ***************************/
 											msg1.setContent("ok");
 											SerializeObject.serializableObjectGraph(gr, "calculator.ant");
 											send(msg1);
 											
 											/** init ants ***/
 											
-											System.out.println("SEND request with End iteration "+NUM);
+											//System.out.println("SEND request with End iteration "+NUM);
+											Loggers.WriteLog("Calculator >>  Send end iteration  "+NUM+"   >>  "+new Date());
 											NUM++;
 											
 											recievs_ants = new ArrayList<Ant>();//.clear();
@@ -241,7 +254,8 @@ public class Calculator extends Agent{
 										bestAnt.add(SerializeObject.DeserializableObjectBestAnt("bestants/best_"+i+".txt"));
 									}
 									
-									System.out.println(">>> best ant from file "+bestAnt.toString());
+									//System.out.println(">>> best ant from file "+bestAnt.toString());
+									Loggers.WriteLog("Calculator >>  Best solution Graph "+bestAnt.toString() +" >> "+new Date());
 									/*
 									 for (int i = 0; i < bestAnt.size(); i++) {
 										dt.put(bestAnt.get(i), bestAnt.get(i).getArcs());

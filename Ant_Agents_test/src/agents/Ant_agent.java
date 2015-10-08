@@ -3,6 +3,7 @@ package agents;
 import java.io.Serializable;
 import java.util.Date;
 
+import utils.Loggers;
 import utils.SerializeObject;
 
 import entite.Ant;
@@ -29,8 +30,9 @@ public class Ant_agent extends Agent{
 		myant = (Ant) obj[0];
 		SerializeObject.serializableObjectAnt(myant, "ant_agent"+getAID().getLocalName()+".ant");
 		
-		System.out.println("Bonsoir je suis l'agent ANT  "+getAID().getLocalName()+" >> "+getAID().getName());
-		System.out.println(">>> "+myant.toString());
+		//System.out.println("Bonsoir je suis l'agent ANT  "+getAID().getLocalName()+" >> "+getAID().getName());
+		//System.out.println(">>> "+myant.toString());
+		Loggers.WriteLog(getAID().getLocalName()+" >>  Begin  "+new Date());
 		//*System.out.println(">>> statrt ant "+this.getName()); //myant.toString());
 		
 		addBehaviour(new CyclicBehaviour() {
@@ -55,7 +57,8 @@ public class Ant_agent extends Agent{
 					if(msg != null){
 						if(msg.getPerformative() == ACLMessage.INFORM){
 							if(msg.getContent().equals("OK")){
-								System.out.println("ANT in INFORM REcieve INFORM From "+getName());
+								//System.out.println("ANT in INFORM REcieve INFORM From "+getName());
+								Loggers.WriteLog(getAID().getLocalName()+" >>  In Inform  "+new Date());
 								try {
 									myant = SerializeObject.DeserializableObjectAnt("ant_agent"+getAID().getLocalName()+".ant");
 									myant.initAnt();
@@ -74,10 +77,12 @@ public class Ant_agent extends Agent{
 									System.out.println("Exception Ant Inform "+e.getMessage());
 								}
 								
-								System.out.println("ANT in INFORM send PERPOSE To  "+getName());
+								//System.out.println("ANT in INFORM send PERPOSE To  "+getName());
+								Loggers.WriteLog(getAID().getLocalName()+" >>  In inform Send Perpose  "+new Date());
 							}
 						}else if(msg.getPerformative() == ACLMessage.REQUEST){
-							System.out.println("Ant REQUEST Receive REQUEST FROM "+getName());
+							//System.out.println("Ant REQUEST Receive REQUEST FROM "+getName());
+							Loggers.WriteLog(getAID().getLocalName()+" >>  In request receive  "+new Date());
 							
 							//myant.setG((Graph) msg.getContentObject()); -- desrialize object
 							//if(msg.getContent().toString().equals("ok")){
@@ -100,7 +105,8 @@ public class Ant_agent extends Agent{
 									System.out.println("Exception ant REQUEST "+e.getMessage());
 								}
 								
-								System.out.println("ANT in Request send PERPOSE TO "+getName());
+								//System.out.println("ANT in Request send PERPOSE TO "+getName());
+								Loggers.WriteLog(getAID().getLocalName()+" >>  in request send perpose  "+new Date());
 							//}
 							
 						}
