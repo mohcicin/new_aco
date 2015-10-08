@@ -1,0 +1,111 @@
+cicinant0 >>  Begin  Thu Oct 08 22:07:01 WAT 2015
+cicinant0 >>  In Inform  Thu Oct 08 22:07:02 WAT 2015
+cicinant4 >>  Begin  Thu Oct 08 22:07:01 WAT 2015
+cicinant2 >>  Begin  Thu Oct 08 22:07:02 WAT 2015
+cicinant4 >>  In Inform  Thu Oct 08 22:07:02 WAT 2015
+cicinant2 >>  In Inform  Thu Oct 08 22:07:02 WAT 2015
+cicinant3 >>  Begin  Thu Oct 08 22:07:02 WAT 2015
+cicinant3 >>  In Inform  Thu Oct 08 22:07:02 WAT 2015
+cicinant1 >>  Begin  Thu Oct 08 22:07:02 WAT 2015
+cicinant1 >>  In Inform  Thu Oct 08 22:07:02 WAT 2015
+cicinant4 >>  In inform Send Perpose  Thu Oct 08 22:07:02 WAT 2015
+Calculator >>  2 Recieve PERPOSE FROM ants  0 # 5 << Thu Oct 08 22:07:02 WAT 2015
+cicinant2 >>  In inform Send Perpose  Thu Oct 08 22:07:02 WAT 2015
+Calculator >>  3 Recieve PERPOSE FROM ants  0 # 5 << Thu Oct 08 22:07:02 WAT 2015
+cicinant1 >>  In inform Send Perpose  Thu Oct 08 22:07:02 WAT 2015
+Calculator >>  4 Recieve PERPOSE FROM ants  0 # 5 << Thu Oct 08 22:07:03 WAT 2015
+cicinant0 >>  In inform Send Perpose  Thu Oct 08 22:07:03 WAT 2015
+Calculator >>  5 Recieve PERPOSE FROM ants  0 # 5 << Thu Oct 08 22:07:03 WAT 2015
+cicinant3 >>  In inform Send Perpose  Thu Oct 08 22:07:03 WAT 2015
+Calculator >>  6 Recieve PERPOSE FROM ants  0 # 5 << Thu Oct 08 22:07:03 WAT 2015
+Calculator >>  Update Graph Thu Oct 08 22:07:03 WAT 2015
+Calculator >>  Best Ant Iteration 0 at Thu Oct 08 22:07:03 WAT 2015
+Calculator >>  Update Global pheromone Thu Oct 08 22:07:03 WAT 2015
+cicinant0 >>  In request receive  Thu Oct 08 22:07:04 WAT 2015
+cicinant4 >>  In request receive  Thu Oct 08 22:07:04 WAT 2015
+Calculator >>  Send end iteration  0   >>  Thu Oct 08 22:07:04 WAT 2015
+cicinant3 >>  In request receive  Thu Oct 08 22:07:04 WAT 2015
+cicinant2 >>  In request receive  Thu Oct 08 22:07:04 WAT 2015
+cicinant1 >>  In request receive  Thu Oct 08 22:07:04 WAT 2015
+cicinant3 >>  in request send perpose  Thu Oct 08 22:07:04 WAT 2015
+Calculator >>  7 Recieve PERPOSE FROM ants  0 # 5 << Thu Oct 08 22:07:04 WAT 2015
+cicinant0 >>  in request send perpose  Thu Oct 08 22:07:04 WAT 2015
+Calculator >>  8 Recieve PERPOSE FROM ants  0 # 5 << Thu Oct 08 22:07:05 WAT 2015
+cicinant1 >>  in request send perpose  Thu Oct 08 22:07:05 WAT 2015
+Calculator >>  9 Recieve PERPOSE FROM ants  0 # 5 << Thu Oct 08 22:07:05 WAT 2015
+cicinant4 >>  in request send perpose  Thu Oct 08 22:07:05 WAT 2015
+Calculator >>  10 Recieve PERPOSE FROM ants  0 # 5 << Thu Oct 08 22:07:05 WAT 2015
+cicinant2 >>  in request send perpose  Thu Oct 08 22:07:05 WAT 2015
+Calculator >>  11 Recieve PERPOSE FROM ants  0 # 5 << Thu Oct 08 22:07:06 WAT 2015
+Calculator >>  Update Graph Thu Oct 08 22:07:06 WAT 2015
+Calculator >>  Best Ant Iteration 1 at Thu Oct 08 22:07:06 WAT 2015
+Calculator >>  Update Global pheromone Thu Oct 08 22:07:06 WAT 2015
+cicinant0 >>  In request receive  Thu Oct 08 22:07:06 WAT 2015
+cicinant4 >>  In request receive  Thu Oct 08 22:07:06 WAT 2015
+cicinant3 >>  In request receive  Thu Oct 08 22:07:06 WAT 2015
+Calculator >>  Send end iteration  1   >>  Thu Oct 08 22:07:06 WAT 2015
+cicinant2 >>  In request receive  Thu Oct 08 22:07:06 WAT 2015
+cicinant1 >>  In request receive  Thu Oct 08 22:07:06 WAT 2015
+cicinant0 >>  in request send perpose  Thu Oct 08 22:07:06 WAT 2015
+Calculator >>  12 Recieve PERPOSE FROM ants  0 # 5 << Thu Oct 08 22:07:06 WAT 2015
+cicinant2 >>  in request send perpose  Thu Oct 08 22:07:07 WAT 2015
+Calculator >>  13 Recieve PERPOSE FROM ants  0 # 5 << Thu Oct 08 22:07:07 WAT 2015
+cicinant1 >>  in request send perpose  Thu Oct 08 22:07:07 WAT 2015
+Calculator >>  14 Recieve PERPOSE FROM ants  0 # 5 << Thu Oct 08 22:07:07 WAT 2015
+cicinant4 >>  in request send perpose  Thu Oct 08 22:07:07 WAT 2015
+Calculator >>  15 Recieve PERPOSE FROM ants  0 # 5 << Thu Oct 08 22:07:08 WAT 2015
+cicinant3 >>  in request send perpose  Thu Oct 08 22:07:08 WAT 2015
+Calculator >>  16 Recieve PERPOSE FROM ants  0 # 5 << Thu Oct 08 22:07:08 WAT 2015
+Calculator >>  Update Graph Thu Oct 08 22:07:08 WAT 2015
+Calculator >>  Best Ant Iteration 2 at Thu Oct 08 22:07:08 WAT 2015
+Calculator >>  Update Global pheromone Thu Oct 08 22:07:08 WAT 2015
+cicinant0 >>  In request receive  Thu Oct 08 22:07:08 WAT 2015
+Calculator >>  Send end iteration  2   >>  Thu Oct 08 22:07:08 WAT 2015
+cicinant4 >>  In request receive  Thu Oct 08 22:07:08 WAT 2015
+cicinant3 >>  In request receive  Thu Oct 08 22:07:08 WAT 2015
+cicinant2 >>  In request receive  Thu Oct 08 22:07:08 WAT 2015
+cicinant1 >>  In request receive  Thu Oct 08 22:07:08 WAT 2015
+cicinant2 >>  in request send perpose  Thu Oct 08 22:07:09 WAT 2015
+Calculator >>  17 Recieve PERPOSE FROM ants  0 # 5 << Thu Oct 08 22:07:09 WAT 2015
+cicinant1 >>  in request send perpose  Thu Oct 08 22:07:10 WAT 2015
+Calculator >>  18 Recieve PERPOSE FROM ants  0 # 5 << Thu Oct 08 22:07:10 WAT 2015
+cicinant0 >>  in request send perpose  Thu Oct 08 22:07:10 WAT 2015
+Calculator >>  19 Recieve PERPOSE FROM ants  0 # 5 << Thu Oct 08 22:07:10 WAT 2015
+cicinant4 >>  in request send perpose  Thu Oct 08 22:07:11 WAT 2015
+Calculator >>  20 Recieve PERPOSE FROM ants  0 # 5 << Thu Oct 08 22:07:11 WAT 2015
+cicinant3 >>  in request send perpose  Thu Oct 08 22:07:11 WAT 2015
+Calculator >>  21 Recieve PERPOSE FROM ants  0 # 5 << Thu Oct 08 22:07:12 WAT 2015
+Calculator >>  Update Graph Thu Oct 08 22:07:12 WAT 2015
+Calculator >>  Best Ant Iteration 3 at Thu Oct 08 22:07:12 WAT 2015
+Calculator >>  Update Global pheromone Thu Oct 08 22:07:12 WAT 2015
+cicinant0 >>  In request receive  Thu Oct 08 22:07:12 WAT 2015
+cicinant4 >>  In request receive  Thu Oct 08 22:07:12 WAT 2015
+Calculator >>  Send end iteration  3   >>  Thu Oct 08 22:07:12 WAT 2015
+cicinant3 >>  In request receive  Thu Oct 08 22:07:12 WAT 2015
+cicinant2 >>  In request receive  Thu Oct 08 22:07:12 WAT 2015
+cicinant1 >>  In request receive  Thu Oct 08 22:07:12 WAT 2015
+cicinant2 >>  in request send perpose  Thu Oct 08 22:07:14 WAT 2015
+Calculator >>  22 Recieve PERPOSE FROM ants  0 # 5 << Thu Oct 08 22:07:15 WAT 2015
+cicinant1 >>  in request send perpose  Thu Oct 08 22:07:16 WAT 2015
+Calculator >>  23 Recieve PERPOSE FROM ants  0 # 5 << Thu Oct 08 22:07:16 WAT 2015
+cicinant0 >>  in request send perpose  Thu Oct 08 22:07:17 WAT 2015
+Calculator >>  24 Recieve PERPOSE FROM ants  0 # 5 << Thu Oct 08 22:07:17 WAT 2015
+cicinant4 >>  in request send perpose  Thu Oct 08 22:07:18 WAT 2015
+Calculator >>  25 Recieve PERPOSE FROM ants  0 # 5 << Thu Oct 08 22:07:19 WAT 2015
+cicinant3 >>  in request send perpose  Thu Oct 08 22:07:19 WAT 2015
+Calculator >>  26 Recieve PERPOSE FROM ants  0 # 5 << Thu Oct 08 22:07:20 WAT 2015
+Calculator >>  Update Graph Thu Oct 08 22:07:21 WAT 2015
+Calculator >>  Best Ant Iteration 4 at Thu Oct 08 22:07:21 WAT 2015
+Calculator >>  Update Global pheromone Thu Oct 08 22:07:21 WAT 2015
+cicinant0 >>  In request receive  Thu Oct 08 22:07:23 WAT 2015
+cicinant4 >>  In request receive  Thu Oct 08 22:07:23 WAT 2015
+Calculator >>  Send end iteration  4   >>  Thu Oct 08 22:07:23 WAT 2015
+cicinant3 >>  In request receive  Thu Oct 08 22:07:23 WAT 2015
+cicinant2 >>  In request receive  Thu Oct 08 22:07:23 WAT 2015
+cicinant1 >>  In request receive  Thu Oct 08 22:07:23 WAT 2015
+Calculator >>  Best solution Graph [Ant [name=cicinant0_203#164, start=null, actuel=null, arcs=[Arc [dest=City [name=335#204, latlang=PointsCoordinate [px=335, py=204]], distance=137.92751719653333, pheromone=0.1, src=City [name=203#164, latlang=PointsCoordinate [px=203, py=164]]], Arc [dest=City [name=362#78, latlang=PointsCoordinate [px=362, py=78]], distance=128.86038956948718, pheromone=0.1, src=City [name=335#204, latlang=PointsCoordinate [px=335, py=204]]], Arc [dest=City [name=529#208, latlang=PointsCoordinate [px=529, py=208]], distance=211.6341182323871, pheromone=0.1, src=City [name=362#78, latlang=PointsCoordinate [px=362, py=78]]], Arc [dest=City [name=418#401, latlang=PointsCoordinate [px=418, py=401]], distance=222.64321233758733, pheromone=0.1, src=City [name=529#208, latlang=PointsCoordinate [px=529, py=208]]]], memories=[], proba=[], dao=null, g=null, phoromone=0.1], Ant [name=cicinant0_203#164, start=null, actuel=null, arcs=[Arc [dest=City [name=335#204, latlang=PointsCoordinate [px=335, py=204]], distance=137.92751719653333, pheromone=0.1, src=City [name=203#164, latlang=PointsCoordinate [px=203, py=164]]], Arc [dest=City [name=362#78, latlang=PointsCoordinate [px=362, py=78]], distance=128.86038956948718, pheromone=0.1, src=City [name=335#204, latlang=PointsCoordinate [px=335, py=204]]], Arc [dest=City [name=529#208, latlang=PointsCoordinate [px=529, py=208]], distance=211.6341182323871, pheromone=0.1, src=City [name=362#78, latlang=PointsCoordinate [px=362, py=78]]], Arc [dest=City [name=418#401, latlang=PointsCoordinate [px=418, py=401]], distance=222.64321233758733, pheromone=0.1, src=City [name=529#208, latlang=PointsCoordinate [px=529, py=208]]]], memories=[], proba=[], dao=null, g=null, phoromone=0.1], Ant [name=cicinant0_203#164, start=null, actuel=null, arcs=[Arc [dest=City [name=335#204, latlang=PointsCoordinate [px=335, py=204]], distance=137.92751719653333, pheromone=0.1, src=City [name=203#164, latlang=PointsCoordinate [px=203, py=164]]], Arc [dest=City [name=362#78, latlang=PointsCoordinate [px=362, py=78]], distance=128.86038956948718, pheromone=0.1, src=City [name=335#204, latlang=PointsCoordinate [px=335, py=204]]], Arc [dest=City [name=529#208, latlang=PointsCoordinate [px=529, py=208]], distance=211.6341182323871, pheromone=0.1, src=City [name=362#78, latlang=PointsCoordinate [px=362, py=78]]], Arc [dest=City [name=418#401, latlang=PointsCoordinate [px=418, py=401]], distance=222.64321233758733, pheromone=0.1, src=City [name=529#208, latlang=PointsCoordinate [px=529, py=208]]]], memories=[], proba=[], dao=null, g=null, phoromone=0.1], Ant [name=cicinant0_203#164, start=null, actuel=null, arcs=[Arc [dest=City [name=335#204, latlang=PointsCoordinate [px=335, py=204]], distance=137.92751719653333, pheromone=0.1, src=City [name=203#164, latlang=PointsCoordinate [px=203, py=164]]], Arc [dest=City [name=362#78, latlang=PointsCoordinate [px=362, py=78]], distance=128.86038956948718, pheromone=0.1, src=City [name=335#204, latlang=PointsCoordinate [px=335, py=204]]], Arc [dest=City [name=529#208, latlang=PointsCoordinate [px=529, py=208]], distance=211.6341182323871, pheromone=0.1, src=City [name=362#78, latlang=PointsCoordinate [px=362, py=78]]], Arc [dest=City [name=418#401, latlang=PointsCoordinate [px=418, py=401]], distance=222.64321233758733, pheromone=0.1, src=City [name=529#208, latlang=PointsCoordinate [px=529, py=208]]]], memories=[], proba=[], dao=null, g=null, phoromone=0.1], Ant [name=cicinant0_203#164, start=null, actuel=null, arcs=[Arc [dest=City [name=335#204, latlang=PointsCoordinate [px=335, py=204]], distance=137.92751719653333, pheromone=0.1, src=City [name=203#164, latlang=PointsCoordinate [px=203, py=164]]], Arc [dest=City [name=362#78, latlang=PointsCoordinate [px=362, py=78]], distance=128.86038956948718, pheromone=0.1, src=City [name=335#204, latlang=PointsCoordinate [px=335, py=204]]], Arc [dest=City [name=529#208, latlang=PointsCoordinate [px=529, py=208]], distance=211.6341182323871, pheromone=0.1, src=City [name=362#78, latlang=PointsCoordinate [px=362, py=78]]], Arc [dest=City [name=418#401, latlang=PointsCoordinate [px=418, py=401]], distance=222.64321233758733, pheromone=0.1, src=City [name=529#208, latlang=PointsCoordinate [px=529, py=208]]]], memories=[], proba=[], dao=null, g=null, phoromone=0.1]] >> Thu Oct 08 22:07:28 WAT 2015
+cicinant3 >>  in request send perpose  Thu Oct 08 22:07:29 WAT 2015
+cicinant2 >>  in request send perpose  Thu Oct 08 22:07:31 WAT 2015
+cicinant1 >>  in request send perpose  Thu Oct 08 22:07:32 WAT 2015
+cicinant0 >>  in request send perpose  Thu Oct 08 22:07:34 WAT 2015
+cicinant4 >>  in request send perpose  Thu Oct 08 22:07:37 WAT 2015
